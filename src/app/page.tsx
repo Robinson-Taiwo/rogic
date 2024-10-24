@@ -16,7 +16,7 @@ const Home = () => {
     <div className=" flex flex-col w-screen items-center justify-center " >
 
 
-      <div className="flex relative w-full max-w-5xl px-4 gap-36  flex-col items-center">
+      <div className="flex relative w-full max-w-5xl px-4 md:px-8 gap-36  flex-col items-center">
 
         <Hero />
 

@@ -10,15 +10,15 @@ const satoshi = localFont({
       weight: "400",
     },
     {
-      path: "./fonts/Satoshi-Bold.woff2", // Add the bold version of the font
+      path: "./fonts/Satoshi-Bold.woff2", // Bold version of the font
       weight: "700",
     },
     {
-      path: "./fonts/Satoshi-Variable.ttf", // Add the bold version of the font
-      weight: "500 600 ",
+      path: "./fonts/Satoshi-Variable.ttf", // Variable version of the font
+      weight: "500 600",
     },
   ],
-  variable: "--font-satoshi"
+  variable: "--font-satoshi",
 });
 
 const racoleta = localFont({
@@ -31,39 +31,33 @@ const racoleta = localFont({
       path: "./fonts/Recoleta-Medium.woff2",
       weight: "500",
     },
-
     {
       path: "./fonts/RecoletaAlt-SemiBold.woff2",
       weight: "400",
     },
-
     {
-      path: "./fonts/Recoleta-Bold.woff2", // Add the bold version of the font
+      path: "./fonts/Recoleta-Bold.woff2", // Bold version of the font
       weight: "700",
     },
-
+    {
+      path: "./fonts/recoleta-regulardemo.otf", // Adding the new Recoleta-RegularDemo.otf font
+      weight: "400",
+    },
   ],
-  variable: "--font-racoleta"
+  variable: "--font-racoleta",
 });
-
-// const satosh = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-
-// ./fonts/Satoshi-Variable.tff
 
 export const metadata: Metadata = {
   title: "Create Next App",

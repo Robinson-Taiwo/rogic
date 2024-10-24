@@ -59,15 +59,15 @@ const CaseStudyCard: FC<CardProps> = ({
                         {buttonText}
                     </button>
                 </div>
-                <div className="mt-6 lg:mt-0 lg:w-1/2 flex flex-col items-center lg:items-end">
+                <div className="mt-6 lg:mt-0 w-full  lg:h-full lg:w-1/2 flex flex-col items-center relative lg:items-end">
                     <Image
                         src={imageSrc}
                         alt="App Screenshot"
                         width={150}
                         height={300}
-                        className="rounded-lg w-full h-full object-cover shadow-lg"
+                        className="rounded-lg w-full h-full lg:h-full md:h-[15rem] object-cover shadow-lg"
                     />
-                    <div className="flex space-x-16 mt-6">
+                    <div className="flex relative space-x-16 mt-6">
                         <div className="text-center">
                             <p className="text-gray-600">User Retention</p>
                             <p className="lg:text-4xl text-2xl font-semibold text-black text-opacity-50">{userRetention}</p>
