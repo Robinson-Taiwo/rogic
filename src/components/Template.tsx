@@ -52,18 +52,18 @@ const templates: Template[] = [
 
 const TemplatesGrid: React.FC = () => {
     return (
-        <div className="bg-gray-50 py-12 px-6">
-            <h2 className="text-center text-2xl font-semibold text-gray-800 mb-10">Free Framer Templates</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+        <div className=" w-full py-12 px-6">
+            <h2 className="text-center text-2xl w-full font-semibold text-gray-800 mb-10">Free Framer Templates</h2>
+            <div className="grid grid-cols-1 w-full sm:grid-cols-2 md:grid-cols-1   lg:grid-cols-3 xl:grid-col-4 gap-8 max-w-7xl mx-auto">
                 {templates.map((template, index) => (
-                    <div key={index} className="bg-white p-4 justify-between flex flex-col rounded-lg  text-center">
-                        <div className="relative w-full h-56 mb-4">
+                    <div key={index} className="bg-white p-4 w-full justify-between flex flex-col rounded-lg  text-center">
+                        <div className="relative w-full h-56 lg:h-56 md:h-[700px] mb-4">
                             <Image
                                 src={template.image}
                                 alt={template.title}
                                 layout="fill"
                                 objectFit="cover"
-                                className="rounded-lg"
+                                className="object-cover"
                             />
                         </div>
                         <h3 className="text-lg font-medium text-black text-opacity-75 mb-2">{template.title}</h3>
