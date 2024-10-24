@@ -1,6 +1,56 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+
+const satoshi = localFont({
+  src: [
+    {
+      path: "./fonts/Satoshi-Regular.woff2",
+      weight: "400",
+    },
+    {
+      path: "./fonts/Satoshi-Bold.woff2", // Add the bold version of the font
+      weight: "700",
+    },
+    {
+      path: "./fonts/Satoshi-Variable.ttf", // Add the bold version of the font
+      weight: "500 600 ",
+    },
+  ],
+  variable: "--font-satoshi"
+});
+
+const racoleta = localFont({
+  src: [
+    {
+      path: "./fonts/RecoletaAlt-Regular.woff2",
+      weight: "400",
+    },
+    {
+      path: "./fonts/Recoleta-Medium.woff2",
+      weight: "500",
+    },
+
+    {
+      path: "./fonts/RecoletaAlt-SemiBold.woff2",
+      weight: "400",
+    },
+
+    {
+      path: "./fonts/Recoleta-Bold.woff2", // Add the bold version of the font
+      weight: "700",
+    },
+
+  ],
+  variable: "--font-racoleta"
+});
+
+// const satosh = localFont({
+//   src: "./fonts/GeistVF.woff",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -12,6 +62,8 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
+// ./fonts/Satoshi-Variable.tff
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,8 +78,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={` ${racoleta.variable} ${satoshi.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
