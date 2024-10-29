@@ -9,7 +9,7 @@ import { BackgroundGradientAnimation } from './ui/background-gradient-animation'
 const Hero = () => {
     return (
         <div className="relative flex w-full h-full items-center justify-center"  >
-            <BackgroundGradientAnimation  className="relative flex w-full h-full items-center justify-center"  >
+            <BackgroundGradientAnimation  className="relative flex w-full h-full items-center justify-center  pb-20 lg:pb-0 "  >
 
                 {/* Main content */}
                 <div className="flex max-w-5xl w-full px-4 lg:px-8 gap-8 lg:mb-36 items-center lg:pt-20 pt-16  flex-col">

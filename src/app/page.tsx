@@ -18,7 +18,7 @@ const Home = () => {
         <Hero />
   
       {/* Wrap the rest of the components in max-w-5xl */}
-      <div className="max-w-5xl w-full flex-col items-center flex lg:gap-20 mx-auto px-4 md:px-8">
+      <div className="max-w-5xl w-full flex-col items-center  flex lg:gap-20 mx-auto px-4 md:px-8">
         <div className="flex items-center lg:relative  flex-col gap-8">
           <CaseStudy />
           <div>
