@@ -11,18 +11,16 @@ import Hero from '@/components/Hero';
 import Link from 'next/link';
 import Marquee from '@/components/Marque';
 import CollaborativeGallery from '@/components/GalleryCard';
-import { BackgroundGradientAnimation } from '@/components/ui/background-gradient-animation';
 
 const Home = () => {
   return (
     <div className="flex flex-col w-screen items-center justify-center">
-      <BackgroundGradientAnimation>
         <Hero />
-      </BackgroundGradientAnimation>
+  
 
       {/* Wrap the rest of the components in max-w-5xl */}
-      <div className="max-w-5xl w-full flex-col items-center flex gap-20 mx-auto px-4 md:px-8">
-        <div className="flex items-center lg:relative lg:top-[-13rem] xl:top-[-25rem] flex-col gap-8">
+      <div className="max-w-5xl w-full flex-col items-center flex lg:gap-20 mx-auto px-4 md:px-8">
+        <div className="flex items-center lg:relative  flex-col gap-8">
           <CaseStudy />
           <div>
             <Link
@@ -34,7 +32,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="md:px-8 w-full lg:relative lg:top-[-10rem] flex items-center justify-center mb-10">
+        <div className="md:px-8 w-full lg:relative  flex items-center justify-center mb-10">
           <HighlightedText />
         </div>
 
@@ -56,13 +54,13 @@ const Home = () => {
         </div>
 
         <div className="flex w-full relative overflow-x-hidden lg:mb-20 flex-col gap-8">
-          <h2 className="text-3xl font-semibold justify-center lg:justify-start flex mb-6">
+          <h2 className="text-3xl font-semibold overflow-y-hidden overflow-x-hidden justify-center lg:justify-start flex mb-6">
             Tools
           </h2>
           <MarqueeComponent />
         </div>
 
-        <div className="flex w-full lg:mb-20 lg:mt-20 h-full relative overflow-x-hidden flex-col gap-8">
+        <div className="flex w-full lg:mb-20 lg:mt-20 h-full relative overflow-x-hidden overflow-y-hidden  flex-col gap-8">
         <Experience />
         </div>
 
