@@ -37,8 +37,11 @@ export const BackgroundGradientAnimation = ({
 
   const [curY, setCurY] = useState(0); // Changed to track Y-axis position
   const [tgY, setTgY] = useState(0);   // Target Y position
-  const fixedX = window.innerWidth / 2; // Fixed X position (center of screen)
+  const [fixedX, setFixedX] = useState(0);
 
+  useEffect(() => {
+    setFixedX(window.innerWidth / 2); // Access window safely here
+  }, []); 
   useEffect(() => {
     document.body.style.setProperty("--gradient-background-start", gradientBackgroundStart);
     document.body.style.setProperty("--gradient-background-end", gradientBackgroundEnd);
