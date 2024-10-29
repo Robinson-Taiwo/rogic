@@ -46,9 +46,9 @@ const Case: FC<CardProps> = ({
 
     return (
         <div
-            className={`p-6 rounded-lg shadow-lg max-w-5xl mx-auto ${getTitleGradient(title)} ${shouldApplyMargin ? 'mt-12' : ''}`}
+            className={`p-6 rounded-lg shadow-lg max-w-5xl  mx-auto ${getTitleGradient(title)} ${shouldApplyMargin ? 'mt-12' : ''}`}
         >
-            <div className="flex flex-col lg:flex-row justify-between items-center gap-8 p-6">
+            <div className="flex flex-col lg:flex-row  justify-between items-center gap-8 p-6">
                 <div className="lg:w-1/2">
                     <span className="inline-block bg-gray-100 text-gray-700 text-sm px-3 py-1">{tag}</span>
                     <h2 className="mt-4 text-2xl font-semibold text-gray-900">{title}</h2>

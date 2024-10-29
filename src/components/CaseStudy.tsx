@@ -11,7 +11,7 @@ export default function Home() {
     // const { scrollYProgress } = useScroll({ target: containerRef });  
 
     return (
-        <main ref={containerRef} className="w-full mb-28 ">
+        <main ref={containerRef} className="w-full mt-10 mb-28 ">
             {caseStudies.map((study, index) => (
                 <Card
                     key={index}

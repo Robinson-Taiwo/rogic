@@ -14,8 +14,8 @@ const Hero = () => {
             }}
         >
             {/* Main content */}
-            <div className="flex max-w-5xl w-full px-4 lg:px-8 gap-8 lg:mb-36 items-center pt-20 flex-col">
-                <div className="rounded-full flex items-center bg-primary h-24 w-24"></div>
+            <div className="flex max-w-5xl w-full px-4 lg:px-8 gap-8 lg:mb-36 items-center lg:pt-20 pt-16  flex-col">
+                <div className="rounded-full flex items-center bg-primary lg:h-24 lg:w-24  h-20  w-20 "></div>
 
                 {/* Responsive h1 text */}
                 <h1 className=" font-normal text-[#000000C0] text-4xl text-center  lg:text-[50px] lg:leading-[60px] lg:text-center lg:w-[30rem]"  style={{ fontFamily: 'var(--font-racoleta)' }}>
@@ -27,11 +27,12 @@ const Hero = () => {
                     Over a decade of experience in building exceptional websites and digital products.
                 </p>
 
-                <Button className="text-xl py-6 flex">
+                <Button className="text-xl cursor-pointer py-6 flex">
                     <span><Image src={contra} height={6} width={6} className="h-8 w-8" alt="contra logo" /></span>
                     <span>Hire me on Contra</span>
                 </Button>
             </div>
+      
         </div>
     );
 };

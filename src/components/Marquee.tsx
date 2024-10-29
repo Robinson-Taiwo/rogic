@@ -63,24 +63,24 @@ const MarqueeComponent: React.FC = () => {
     return (
         <motion.div
             ref={ref}
-            initial={{ opacity: 0, y: 50 }} // Start from below with opacity 0
-            animate={isInView ? { opacity: 1, y: 0 } : {}} // Animate when in view
-            transition={{ duration: 0.8 }} // Animation duration
+            initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8 }}
             className="relative flex w-full overflow-hidden py-5"
         >
             {/* Left Fade Effect */}
-            <div className="absolute inset-y-0 left-0 pointer-events-none fade-left"></div>
+            <div className="absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+
             {/* Right Fade Effect */}
-            <div className="absolute inset-y-0 right-0 pointer-events-none fade-right"></div>
+            <div className="absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
 
             {/* Marquee Content */}
             <motion.div
                 initial={{ x: "100%" }}
                 animate={{ x: "-100%" }}
-                transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 80, repeat: Infinity, ease: "linear" }}
                 className="flex flex-shrink-0 flex-row space-x-6 whitespace-nowrap"
             >
-                {/* Duplicate the items enough times to prevent empty spaces */}
                 {[...toolsData, ...toolsData, ...toolsData].map((tool, index) => (
                     <div key={index} className="flex items-center">
                         <Image
@@ -88,17 +88,17 @@ const MarqueeComponent: React.FC = () => {
                             alt={tool.name}
                             width={50}
                             height={50}
-                            className="h-12 object-contain" // Ensure images have the same height
+                            className="h-12 object-contain"
                         />
                     </div>
                 ))}
             </motion.div>
 
-            {/* Optional: You can duplicate the same content for a continuous loop */}
+            {/* Optional: Duplicate content for a continuous loop */}
             <motion.div
                 initial={{ x: "100%" }}
                 animate={{ x: "-100%" }}
-                transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 80, repeat: Infinity, ease: "linear" }}
                 className="flex flex-shrink-0 flex-row space-x-6 whitespace-nowrap"
             >
                 {[...toolsData, ...toolsData, ...toolsData].map((tool, index) => (
@@ -108,7 +108,7 @@ const MarqueeComponent: React.FC = () => {
                             alt={tool.name}
                             width={50}
                             height={50}
-                            className="h-12 object-contain" // Ensure images have the same height
+                            className="h-12 object-contain"
                         />
                     </div>
                 ))}

@@ -37,7 +37,7 @@ const Navbar = () => {
 
             {/* Hamburger Menu for Mobile */}
             <div className="flex flex-row lg:gap-6 gap-4 items-center">
-                <Button className="bg-white text-gray-600 hover:bg-white hover:text-gray-600 font-semibold py-5 text-base">
+                <Button className="bg-white text-gray-600 hover:bg-white hover:text-gray-600 font-semibold lg:py-5 py-3 text-sm lg:text-base">
                     Start a Project
                 </Button>
 
