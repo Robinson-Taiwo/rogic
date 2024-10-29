@@ -9,7 +9,7 @@ export const BackgroundGradientAnimation = ({
   secondColor = "255, 229, 204",
   thirdColor = "255, 229, 204",
   fourthColor = "0, 51, 102",
-  fifthColor = "0, 51, 102",
+  fifthColor = "255, 229, 204",
   pointerColor = "255, 229, 204",
   size = "100%",
   blendingValue = "hard-light",
@@ -41,7 +41,7 @@ export const BackgroundGradientAnimation = ({
 
   useEffect(() => {
     setFixedX(window.innerWidth / 2); // Access window safely here
-  }, []); 
+  }, []);
   useEffect(() => {
     document.body.style.setProperty("--gradient-background-start", gradientBackgroundStart);
     document.body.style.setProperty("--gradient-background-end", gradientBackgroundEnd);
@@ -83,7 +83,7 @@ export const BackgroundGradientAnimation = ({
   return (
     <div
       className={cn(
-        "h-[80vh] lg:h-[70vh] bg-opacity-20 -z-10 w-screen relative overflow-hidden top-0 left-0 bg-[linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end))]",
+        "h-full lg:h-[70vh]   bg-opacity-20 -z-10 w-screen relative overflow-hidden top-0 left-0 bg-[linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end))]",
         containerClassName
       )}
     >

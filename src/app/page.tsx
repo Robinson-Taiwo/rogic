@@ -41,14 +41,14 @@ const Home = () => {
           <Marquee />
         </div>
 
-        <div className="flex flex-col lg:mb-20 gap-8">
+        <div className="flex flex-col mt-10 lg:mb-20 gap-8">
           <h2 className="text-3xl font-semibold overflow-x-hidden justify-center lg:justify-start flex mb-6 text-gray-800">
             Skills
           </h2>
           <SkillsTags />
         </div>
 
-        <div className="flex w-full lg:mb-20 h-full relative overflow-x-hidden flex-col gap-8">
+        <div className="flex w-full mb-20 lg:mb-20 h-full relative overflow-x-hidden mt-20 flex-col gap-8">
           <CollaborativeGallery />
         </div>
 
@@ -59,7 +59,7 @@ const Home = () => {
           <MarqueeComponent />
         </div>
 
-        <div className="flex w-full lg:mb-20 lg:mt-20 h-full relative overflow-x-hidden overflow-y-hidden  flex-col gap-8">
+        <div className="flex w-full mb-20 lg:mb-20 lg:mt-20 h-full relative overflow-x-hidden overflow-y-hidden  flex-col gap-8">
         <Experience />
         </div>
 
