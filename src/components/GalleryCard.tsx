@@ -80,7 +80,7 @@ const CollaborativeGallery: React.FC = () => {
                                 index % galleryData.length === 1 || index % galleryData.length === 3
                                     ? "w-[18rem]"
                                     : "w-[40rem]"
-                            } h-[25rem] rounded-lg bg-black overflow-hidden`}
+                            } h-[25rem] rounded-lg  overflow-hidden`}
                         >
                             <Image
                                 src={item.bigImage}
@@ -106,7 +106,7 @@ const CollaborativeGallery: React.FC = () => {
                                         ))}
                                     </div>
                                     {/* Bottom - Small Image */}
-                                    <div className="w-[20rem] h-[12.5rem] rounded-lg bg-black overflow-hidden">
+                                    <div className="w-[20rem] h-[12.5rem] rounded-lg  overflow-hidden">
                                         <Image
                                             src={item.smallImage}
                                             alt="Small collaboration image"
@@ -120,7 +120,7 @@ const CollaborativeGallery: React.FC = () => {
                             ) : (
                                 <>
                                     {/* Top - Small Image */}
-                                    <div className="w-[20rem] h-[12.5rem] rounded-lg bg-black overflow-hidden">
+                                    <div className="w-[20rem] h-[12.5rem] rounded-lg overflow-hidden">
                                         <Image
                                             src={item.smallImage}
                                             alt="Small collaboration image"

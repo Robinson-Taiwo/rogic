@@ -31,7 +31,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="md:px-8 w-full lg:relative  flex items-center justify-center mb-10">
+        <div className="md:px-8 w-full lg:relative mt-24 lg:mt-10  flex items-center justify-center mb-20">
           <HighlightedText />
         </div>
 
@@ -41,7 +41,7 @@ const Home = () => {
           <Marquee />
         </div>
 
-        <div className="flex flex-col mt-10 lg:mb-20 gap-8">
+        <div className="flex flex-col mt-20 lg:mb-20 gap-8">
           <h2 className="text-3xl font-semibold overflow-x-hidden justify-center lg:justify-start flex mb-6 text-gray-800">
             Skills
           </h2>
