@@ -15,7 +15,7 @@ export default function Work() {
         <main ref={containerRef} className="w-full flex flex-col items-center px-8 pt-28  mb-28 ">
 
 
-            <div className="w-full recoleta text-5xl mb-12  items-center justify-center font-light flex">Case Studies
+            <div className="w-full recoleta text-5xl mb-12 text-[#bf2e30]  items-center justify-center font-light flex">Case Studies
 
             </div>
 
