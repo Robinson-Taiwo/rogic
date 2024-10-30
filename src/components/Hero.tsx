@@ -16,10 +16,9 @@ const Hero = () => {
                         className="absolute -z-20 inset-0"
                         quantity={15000}
                         ease={100}
-                        staticity={1}
+                        staticity={3}
                         color={`#bf2e30`}
                         size={0.01}
-
                         refresh
                     />
                     <Image src="/images/boy.avif" width={24} height={24} alt="guy image" className="object-cover w-full rounded-full h-full" />
