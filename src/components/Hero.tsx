@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="relative flex w-full h-full items-center justify-center"  >
 
             {/* Main content */}
-            <div className="flex  z-10  max-w-5xl relative w-full px-4 lg:px-8 gap-8 lg:mb-36 items-center lg:pt-20 pt-16  flex-col">
+            <div className="flex  z-10  max-w-5xl  w-full px-4 lg:px-8 gap-8 lg:mb-36 items-center lg:pt-20 pt-16  flex-col">
                 <div className="rounded-full flex items-center lg:h-24 lg:w-24  h-20  w-20 ">
                     <Particles
                         className="absolute -z-20 inset-0"
